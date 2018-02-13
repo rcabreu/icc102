@@ -8,9 +8,6 @@ def encriptar(msg, llave):
   while i < len(msg):
     chM = msg[i]
     chL = llave[j]
-    print(chM)
-    print('-')
-    print(i)
     idx = int(ALFA.index(chM))
     idx += int(ALFA.index(chL))
     res += ALFA[idx % 26]
